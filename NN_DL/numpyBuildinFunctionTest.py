@@ -6,6 +6,9 @@ For numpy buildin function testing
 
 import numpy as np
 import math
+import pandas as pd
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 
 """
 # Trigonometry maths operation
@@ -139,7 +142,7 @@ print(r)
 print(flat_array)
 """
 
-
+"""
 # working with mathematicl equations
 # mean_square_error = 1/n(sum((y^i - yi)^2))
 
@@ -151,7 +154,32 @@ print(error)
 
 # array save to file
 np.save('y_hat',y_hat)
+np.savetxt('y.csv',y)
+
+
 y_hat_file = np.load('y_hat.npy')
+print(y_hat)
 print(y_hat_file)
+
+y_file = pd.read_csv('y.csv').values
+print(y_file)
+y_file_flat = y_file.flatten()
+print(y_file_flat)
+"""
+"""
+t = np.random.rand(100)
+u = np.cos(t)
+plt.plot(t)
+plt.plot(u)
+"""
+
+fig = plt.figure()
+ax = Axes3D(fig)
+X = np.arange(-5,5,0.15)
+Y = np.arange(-5,5,0.15)
+X,Y = np.meshgrid(X,Y)
+R = np.sqrt(X**2+Y**2)
+Z = np.sin(R)
+ax.plot_surface(X,Y,Z, rstride=1,cstride=1, cmap='viridis')
 
 
