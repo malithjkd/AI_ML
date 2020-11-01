@@ -105,7 +105,7 @@ print(indices_list)
 unique_valus, occurance_count = np.unique(l, return_counts=True)
 print(occurance_count)
 """
-
+"""
 # Transposing and reshaping metix
 m = np.random.rand(6)
 print(m)
@@ -115,4 +115,43 @@ print(n)
 
 p = n.transpose()
 print(p)
+"""
+"""
+# reverse array
+q = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+print(q)
+fliped_array = np.flip(q)
+print(fliped_array)
+fliped_rows = np.flip(q, axis=0)
+print(fliped_rows)
+fliped_colomns = np.flip(q, axis=1)
+print(fliped_colomns)
+"""
+
+"""
+# flatten
+r = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+print(r)
+#flat_array = r.flatten() #do not chage the parent date 
+flat_array = r.ravel()  # change the parent data it after flatten
+flat_array[1] = 90
+print(r)
+print(flat_array)
+"""
+
+
+# working with mathematicl equations
+# mean_square_error = 1/n(sum((y^i - yi)^2))
+
+y = np.array([1,1,1,1,1,1,1,1])
+y_hat = np.array([0,1,0,1,0,1,1,1])
+
+error = (1/8)*np.sum(np.square(y_hat - y))
+print(error)
+
+# array save to file
+np.save('y_hat',y_hat)
+y_hat_file = np.load('y_hat.npy')
+print(y_hat_file)
+
 
