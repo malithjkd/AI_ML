@@ -172,7 +172,7 @@ u = np.cos(t)
 plt.plot(t)
 plt.plot(u)
 """
-
+"""
 fig = plt.figure()
 ax = Axes3D(fig)
 X = np.arange(-5,5,0.15)
@@ -182,4 +182,24 @@ R = np.sqrt(X**2+Y**2)
 Z = np.sin(R)
 ax.plot_surface(X,Y,Z, rstride=1,cstride=1, cmap='viridis')
 
+"""
 
+"""
+randomA = np.random.randn(5)
+print(randomA)
+print(randomA.shape)
+print(randomA.T)
+print(np.dot(randomA,randomA.T))
+
+randomB = np.random.randn(5,1)
+print(randomB)
+print(randomB.shape)
+print(randomB.T)
+print(np.dot(randomB,randomB.T))
+"""
+
+a = np.random.randn(3,3)
+b = np.random.randn(3,1)
+
+c = a*b
+print(c.shape)
