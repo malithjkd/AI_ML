@@ -75,6 +75,7 @@ def initialize_with_zeros(dim):
     assert(isinstance(b,float) or isinstance(b,int))
     
     return w,b
+
 """
 #testing initialize_with_zeros function
 w,b = initialize_with_zeros(5)
@@ -95,18 +96,19 @@ def propagate(w,b,X,Y):
     return cost, dw, db
 
 
-
+"""
 w = np.array([[1],[2]])
 b = 2.0
 X = np.array([[1,2],[3,4]])
 Y = np.array([[1,0]])
+
 
 cost, dw, db = propagate(w, b, X, Y)
 
 print("dw = " + str(dw))
 print("db = " +str(db))
 print("cost = " +str(cost))
-
+"""
 
 # optimize function 
 def optimize(w, b, X, Y, num_iteration, learning_rate, print_cost = False):
@@ -122,10 +124,11 @@ def optimize(w, b, X, Y, num_iteration, learning_rate, print_cost = False):
     
     return w, b, dw, db, costs
 
+"""
 num_iteration = 100
 learning_rate = 0.009
 w, b, dw, db, costs = optimize(w, b, X, Y, num_iteration, learning_rate, print_cost=False)
-"""
+
 print("w")
 print(w)
 print("b")
@@ -155,12 +158,14 @@ def predict(w, b, X):
     
     return Y_prediction
 
-print("prediction")
-print(predict(w, b, X))
+print("prediction work")
+
+
 
 def model(X_train, Y_train, X_test, Y_test, num_iteration, learning_rate, print_cost = False):
-    w, b = initialize_with_zeros(X_train.shape[0])
-    w, b, dw, db, costs = optimize(w, b, X, Y, num_iteration, learning_rate, print_cost = False)
+    w,b = initialize_with_zeros(X_train.shape[0])
+    w, b, dw, db, costs = optimize(w, b, X_train, Y_train, num_iteration, learning_rate, print_cost = False)
+
     Y_prection_train = predict(w, b, X_train)
     Y_prection_test = predict(w, b, X_test)
     
@@ -169,4 +174,4 @@ def model(X_train, Y_train, X_test, Y_test, num_iteration, learning_rate, print_
     
     return 1
 
-model(train , Y_train, X_test, Y_test, num_iteration, learning_rate)
+d = model(train_set_x_flatten, train_set_y, test_set_x_flatten, test_set_y, 2500, .005, print_cost=True)
