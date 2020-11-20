@@ -198,8 +198,12 @@ print(randomB.T)
 print(np.dot(randomB,randomB.T))
 """
 
-a = np.random.randn(3,3)
-b = np.random.randn(3,1)
+a = np.random.randn(2,8)
+b = np.sum(a,axis=1,keepdims=True)
 
-c = a*b
-print(c.shape)
+
+print(a.shape)
+print(a)
+
+
+
