@@ -1,14 +1,28 @@
-# AI_ML
-Machine learning
+# AI_ML Learning Materials
 
-Cousera course of Neural Networks and Deep Learning work.
+## Introduction
+
+Cousera course of [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning) work.
+
+## Instructions
 
 To run the diffirent packages with python we need to install conda.
-connda commands
+connda commands.
 
-: "conda env list" - To see the conda enviroments in the pc
+### Common commands
 
-: "conda list" - To see the conda package list
+To see the conda enviroments in the pc.
+
+'''conda
+conda env list
+'''
+
+To see the conda package list
+
+'''conda
+conda list 
+'''
+
 
 : "conda create --name "env name" python = 3.7"   -to create conda enviroment
 
