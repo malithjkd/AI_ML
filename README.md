@@ -14,7 +14,7 @@ conda commands.
 
 ## Required conda package list
 
-* NumPY
+* [NumPY](https://numpy.org/install/)
 * Matplotlib
 * scikit-learn
 * SPYDER
@@ -45,13 +45,13 @@ You can use any name as "env name". (ex:ai37)
 To activate the our environment
 
 ```bash
-sorce activate "env name" 
+source activate "env name" 
 ```
 
 After activation of environment, terminal indicate our envirnoment as
 
 ```bash
-(ai73) pc@pc:~$
+(ai37) pc@pc:~$
 ```
 
 To deactivate working environment
