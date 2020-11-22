@@ -13,20 +13,27 @@ connda commands.
 
 To see the conda enviroments in the pc.
 
-'''conda
+'''bash
 conda env list
 '''
 
 To see the conda package list
 
-'''conda
+'''bash
 conda list 
 '''
 
+to create conda enviroment
 
-: "conda create --name "env name" python = 3.7"   -to create conda enviroment
+'''bash
+conda create --name "env name" python = 3.7
+'''
 
-: "soruce activate "env name" "  -to activate the our enviroment
+To activate the our enviroment
+
+'''bash
+soruce activate "env name" 
+'''
 
 : "conda deactivate"  -to deactivate our enviroment
 
