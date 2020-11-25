@@ -37,7 +37,7 @@ conda list
 To create conda environment
 
 ```bash
-conda create --name "env name" python = 3.7
+conda create --name "env name" python=3.7
 ```
 
 You can use any name as "env name". (ex:ai37)
