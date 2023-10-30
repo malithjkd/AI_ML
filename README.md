@@ -66,6 +66,10 @@ To install packages to conda
 install "packageName"
 ```
 
+```bash
+install "conda"
+```
+
 most of the time this way of installing works, if not please read more about install the package on conda environment.
 
 
