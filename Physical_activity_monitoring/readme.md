@@ -40,4 +40,4 @@ deactivate
 ```
 
 ---
-Document the dataset source and usage in this file. Place your dataset in the `data/` folder and follow the recommended project structure for best practices.
+Document the dataset source and usage in this file. Data source for the project is located in outside the vertion tracked AI_ML folder.  
