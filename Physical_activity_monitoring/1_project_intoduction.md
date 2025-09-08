@@ -15,16 +15,17 @@ The project is divided into the following key stages:
     - Verify the data format against the column descriptions in the dataset documentation.
     - Handle missing values (`NaNs`) using an appropriate strategy (e.g., interpolation for time-series data or removal).
     - Perform EDA:
-        - Plot sensor data (e.g., acceleration, heart rate) over time for different activities.
-        - Analyze the distribution of data points across the 18 activities.
-        - Check for and handle any data inconsistencies.
+        - Plot sensor data (e.g., acceleration, heart rate) over time for different activities. `- Done`
+        - Analyze the distribution of data points across the 18 activities. `- Done`
+        - Check for and handle any data inconsistencies. `- Done`
 
 ### Stage 2: Data Preprocessing
 - **Objective:** Prepare the raw sensor data for feature extraction by cleaning and segmenting it.
 - **Tasks:**
     - Filter out all data points labeled with `activityID = 0` (transient activities).
     - Synchronize sensor data streams based on timestamps.
-    - Segment the continuous data into fixed-size windows. Based on the reference paper, we will use a **sliding window of 5.12 seconds with a 1-second shift**.
+    - Segment the continuous data into fixed-size windows. - **current stage** - Chunking in to one second of data chunks 
+    - Based on the reference paper, we will use a **sliding window of 5.12 seconds with a 1-second shift**. - next stage
 
 ### Stage 3: Feature Engineering
 - **Objective:** Extract meaningful features from the segmented data windows to serve as input for the machine learning models.
