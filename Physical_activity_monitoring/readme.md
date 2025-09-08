@@ -11,6 +11,7 @@ Open PowerShell and run:
 
 ```powershell
 python3.13 -m venv AI_ML_env
+python -m venv AI_ML_env
 ```
 
 ### 2. Activate the Environment
