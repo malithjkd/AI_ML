@@ -34,7 +34,7 @@ Total features = (#channels_kept * 6)
 - Quick reference accuracy (e.g., expect well above random if signals are discriminative)
 
 ### Code Skeleton
-```
+```python
 import os, glob, re, random, numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix
@@ -113,7 +113,7 @@ Chosen as first serious benchmark due to speed and strong accuracy on short, mul
 10. Save transformer, classifier, config (classes, channel indices).
 
 ### Full Code
-```
+```python
 import os, glob, re, random, numpy as np, joblib, json
 from sklearn.linear_model import RidgeClassifierCV
 from sklearn.metrics import classification_report, confusion_matrix
