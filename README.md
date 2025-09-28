@@ -19,6 +19,10 @@ conda commands.
 * scikit-learn
 * SPYDER
 
+### Model traning and tracking
+Malithjkd profile: [weights and bias](https://wandb.ai/malithjkd)
+
+
 
 ### Common commands
 
