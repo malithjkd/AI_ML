@@ -16,9 +16,20 @@ python -m venv AI_ML_env
 
 ### 2. Activate the Environment
 
+for windows
 ```powershell
-.\AI_ML_env\Scripts\Activate
+.\AI_ML_env\Scripts\Activate    
+cd AI_ML/Physical_activity_monitoring
+pip install -r requirements_win.txt
 ```
+
+for mac
+```consol
+source AI_ML_env/bin/activate
+cd AI_ML/Physical_activity_monitoring
+pip install -r requirements_mac.txt
+```
+
 
 ### 3. Upgrade pip and Install Required Packages
 
